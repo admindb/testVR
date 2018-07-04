@@ -6,6 +6,7 @@ import android.support.annotation.UiThread;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Toast;
 
 import com.example.vr.bean.User;
 import com.example.vr.data.UserDatabase;
@@ -67,6 +68,7 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public void onClick() {//当我们点击了VrPanoramaView 时候触发            super.onClick();
+            Toast.makeText(MainActivity.this,"666",Toast.LENGTH_LONG).show();
         }
 
         @Override
