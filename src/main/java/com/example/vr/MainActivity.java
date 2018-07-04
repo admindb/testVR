@@ -40,8 +40,8 @@ public class MainActivity extends AppCompatActivity {
         mVrPanoramaView.setStereoModeButtonEnabled(false); //设置隐藏立体模型的按钮
         mVrPanoramaView.setEventListener(new ActivityEventListener()); //设置监听
         //加载本地的图片源
-//        mVrPanoramaView.loadImageFromBitmap(BitmapFactory.decodeResource(getResources(), R.drawable.andes), paNormalOptions);
-        mVrPanoramaView.loadImageFromBitmap(BitmapFactory.decodeResource(getResources(), R.mipmap.vr2), paNormalOptions);
+        mVrPanoramaView.loadImageFromBitmap(BitmapFactory.decodeResource(getResources(), R.drawable.andes), paNormalOptions);
+//        mVrPanoramaView.loadImageFromBitmap(BitmapFactory.decodeResource(getResources(), R.mipmap.vr2), paNormalOptions);
         //设置网络图片源
 //        panoWidgetView.loadImageFromByteArray();
 
