@@ -104,7 +104,7 @@ public class MainActivity extends AppCompatActivity {
 
         List<User> usersList=userDatabase.getUserDao().getAllUsers();
         for (User users:usersList){
-            Log.e(TAG,"姓名：++++++333333"+users.getName()+" 年龄："+users.getAge());
+            Log.e(TAG,"姓名：++++++333333333"+users.getName()+" 年龄："+users.getAge());
         }
 
         User user3=userDatabase.getUserDao().getUser(2);
