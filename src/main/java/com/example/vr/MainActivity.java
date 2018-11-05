@@ -1,8 +1,6 @@
 package com.example.vr;
 
-import android.arch.persistence.room.Room;
 import android.graphics.BitmapFactory;
-import android.support.annotation.UiThread;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -13,7 +11,11 @@ import com.example.vr.data.UserDatabase;
 import com.google.vr.sdk.widgets.pano.VrPanoramaEventListener;
 import com.google.vr.sdk.widgets.pano.VrPanoramaView;
 
+import java.io.File;
 import java.util.List;
+
+import kotlin.io.FilesKt;
+import kotlin.text.Charsets;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -54,6 +56,16 @@ public class MainActivity extends AppCompatActivity {
         }).start();
 
 
+
+
+        KotlinTest.sayMessage("666688888");
+
+
+        Utils.sayMessage("hahahhah");
+
+        File file=new File("README.md");
+        String content= FilesKt.readText(file, Charsets.UTF_8);
+        Log.e("=--===",content);
     }
 
     private class ActivityEventListener extends VrPanoramaEventListener {
