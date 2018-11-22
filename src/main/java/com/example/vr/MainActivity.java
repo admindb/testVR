@@ -97,8 +97,8 @@ public class MainActivity extends AppCompatActivity {
         user.setAge(10);
         userDatabase.getUserDao().insert(user);
         User user2=new User();
-        user2.setName("困 困 困主");
-        user2.setName("困 困 困分");
+        user2.setName("主");
+        user2.setName("22分");
         user2.setAge(15);
         userDatabase.getUserDao().insert(user2);
 
